@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Obra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes da Obra</h1>
+    </header>
+
+    <main>
+        <section id="detalhes-obra">
+            <img id="obra-imagem" src="" alt="Imagem da Obra">
+            <h2 id="obra-titulo">Título</h2>
+            <p id="obra-descricao">Descrição</p>
+            <p id="obra-tamanho">Tamanho</p>
+            <p id="obra-preco">Preço</p>
+            <!-- Link estilizado como botão -->
+            <a id="contato-whatsapp" href="#" target="_blank" class="botao-whatsapp">Contato via WhatsApp</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Léo Barbosa - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Detalhes das pinturas
+        const pinturas = {
+            pintura1: {
+                imagem: "images/opala.jpg",
+                titulo: "Paisagem ao Entardecer",
+                descricao: "Uma bela paisagem ao entardecer, perfeita para salas aconchegantes.",
+                tamanho: "50x70cm",
+                preco: "R$ 800,00",
+                whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo,%20estou%20interessado%20na%20Paisagem%20ao%20Entardecer."
+            },
+            pintura2: {
+                imagem: "images/opala.jpg",
+                titulo: "Abstrato Colorido",
+                descricao: "Obra abstrata vibrante, ideal para ambientes modernos.",
+                tamanho: "40x60cm",
+                preco: "R$ 600,00",
+                whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo,%20estou%20interessado%20no%20Abstrato%20Colorido."
+            },
+            pintura3: {
+                imagem: "images/opala.jpg",
+                titulo: "Opala monocromático",
+                descricao: "Uma pintura poderosa que captura a força do mar.",
+                tamanho: "60x80cm",
+                preco: "R$ 1.200,00",
+                whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo,%20estou%20interessado%20no%20Mar%20Revolto."
+            }
+        };
+
+        // Obter o ID da pintura na URL
+        const params = new URLSearchParams(window.location.search);
+        const pinturaId = params.get('id');
+        const pintura = pinturas[pinturaId];
+
+        // Preencher os dados na página
+        if (pintura) {
+            document.getElementById('obra-imagem').src = pintura.imagem;
+            document.getElementById('obra-titulo').textContent = pintura.titulo;
+            document.getElementById('obra-descricao').textContent = pintura.descricao;
+            document.getElementById('obra-tamanho').textContent = pintura.tamanho;
+            document.getElementById('obra-preco').textContent = pintura.preco;
+            document.getElementById('contato-whatsapp').href = pintura.whatsapp;
+        } else {
+            document.getElementById('detalhes-obra').innerHTML = "<p>Obra não encontrada.</p>";
+        }
+    </script>
+</body>
+</html>
