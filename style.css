@@ -124,3 +124,18 @@ footer {
 .botao-whatsapp:hover {
     background-color: #1da851; /* Tom mais escuro ao passar o mouse */
 }
+.btn-laranja {
+    background-color: #f57c00; /* Cor laranja */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-laranja:hover {
+    background-color: #e65100; /* Tom mais escuro de laranja ao passar o mouse */
+    transform: scale(1.05); /* Pequeno efeito de aumento */
+}
