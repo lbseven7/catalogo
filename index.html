@@ -11,12 +11,13 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#gallery">LOGO</a></li>
                 <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
+        
+        
         <h1>L.Barbosa</h1>
         <p>Conheça Minhas Obras Exclusivas!</p>
     </header>
@@ -24,9 +25,9 @@
     <!-- Filtro de Categorias -->
     <section class="filtro">
         <h2>Filtrar por Categoria</h2>
-        <button onclick="filtrarCategoria('paisagens')">Paisagens</button>
+        <button onclick="filtrarCategoria('natureza_morta')">Natureza Morta</button>
         <button onclick="filtrarCategoria('veiculos')">Veículos</button>
-        <button onclick="filtrarCategoria('abstratos')">Abstratos</button>
+        <button onclick="filtrarCategoria('animais')">Animais</button>
         <button onclick="filtrarCategoria('todas')">Todas</button>
     </section>
 
@@ -72,28 +73,6 @@
         </section>
     </main>
 
-    <!-- Sobre Mim -->
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou Léo Barbosa, artista plástico especializado em criar obras de arte exclusivas e autênticas. Com anos de experiência, minhas obras capturam momentos e emoções em cada pincelada.</p>
-    </section>
-
-    <!-- Contato CAPTURA DE EMAILS-->
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="https://formsubmit.co/leobarbosapinturas@gmail.com" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
 
     <!-- Rodapé -->
     <footer>
