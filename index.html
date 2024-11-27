@@ -7,111 +7,118 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho com Menu de Navegação -->
     <header>
+        <nav>
+            <ul>
+                <li><a href="#gallery">LOGO</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
         <h1>L.Barbosa</h1>
         <p>Conheça Minhas Obras Exclusivas!</p>
     </header>
 
+    <!-- Filtro de Categorias -->
+    <section class="filtro">
+        <h2>Filtrar por Categoria</h2>
+        <button onclick="filtrarCategoria('paisagens')">Paisagens</button>
+        <button onclick="filtrarCategoria('veiculos')">Veículos</button>
+        <button onclick="filtrarCategoria('abstratos')">Abstratos</button>
+        <button onclick="filtrarCategoria('todas')">Todas</button>
+    </section>
+
+    <!-- Galeria -->
     <main>
-        <section class="gallery">
-            <article class="painting">
-                <img src="images/fogao_lenha.jpg" alt="Fogão">
+        <section id="gallery" class="gallery">
+            <article class="painting paisagens">
+                <a href="images/fogao_lenha.jpg" class="lightbox">
+                    <img src="images/fogao_lenha.jpg" alt="Fogão">
+                </a>
                 <h2>Fogão de Lenha I</h2>
                 <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura1')"><strong>Saber Mais</strong></button>
             </article>
-            <article class="painting">
-                <img src="images/fogão_de_lenha.JPG" alt="Abstrato colorido">
+            <article class="painting paisagens">
+                <a href="images/fogão_de_lenha.JPG" class="lightbox">
+                    <img src="images/fogão_de_lenha.JPG" alt="Fogão de Lenha II">
+                </a>
                 <h2>Fogão de Lenha II</h2>
                 <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura2')"><strong>Saber Mais</strong></button>
             </article>
-            <article class="painting">
-                <img src="images/ferrugem.jpg" alt="Carro Antigo">
+            <article class="painting veiculos">
+                <a href="images/ferrugem.jpg" class="lightbox">
+                    <img src="images/ferrugem.jpg" alt="Carro Antigo">
+                </a>
                 <h2>Carros e Ferrugem</h2>
                 <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
             </article>
-            <article class="painting">
-                <img src="images/kombi_antiga.JPG" alt="">
+            <article class="painting veiculos">
+                <a href="images/kombi_antiga.JPG" class="lightbox">
+                    <img src="images/kombi_antiga.JPG" alt="Kombi Antiga">
+                </a>
                 <h2>Kombi 1985</h2>
                 <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
                 <br>
-                <article class="painting">
-                    <img src="imagens/pintura1.jpg" alt="Paisagem ao Entardecer">
-                    <h2>Paisagem ao Entardecer</h2>
-                    <p>Tamanho: 50x70cm</p>
-                    <p>Preço: R$ 800,00</p>
-                    <button class="btn-laranja" onclick="verDetalhes('pintura1')">Ver Detalhes</button>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-                        <input type="hidden" name="cmd" value="_xclick">
-                        <input type="hidden" name="business" value="seuemail@dominio.com">
-                        <input type="hidden" name="item_name" value="Paisagem ao Entardecer">
-                        <input type="hidden" name="amount" value="800.00">
-                        <input type="hidden" name="currency_code" value="BRL">
-                        <input type="submit" value="Comprar Agora" class="btn-pagamento">
-                    </form>
-                </article>
-                
                 <button class="btn-laranja" onclick="verDetalhes('pintura4')"><strong>Saber Mais</strong></button>
             </article>
-            <!-- 
-            
-            <article class="painting">
-                <img src="images/opala.jpg" alt="">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article>
-            <article class="painting">
-                <img src="images/opala.jpg" alt="Mar revolto">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article>
-            <article class="painting">
-                <img src="images/opala.jpg" alt="Mar revolto">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article>
-            <article class="painting">
-                <img src="images/opala.jpg" alt="Mar revolto">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article>
-            <article class="painting">
-                <img src="images/opala.jpg" alt="Mar revolto">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article>
-            <article class="painting">
-                <img src="images/opala.jpg" alt="Mar revolto">
-                <h2>Título da Obra</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
-            </article> -->
         </section>
     </main>
 
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou Léo Barbosa, artista plástico especializado em criar obras de arte exclusivas e autênticas. Com anos de experiência, minhas obras capturam momentos e emoções em cada pincelada.</p>
+    </section>
+
+    <!-- Contato CAPTURA DE EMAILS-->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="https://formsubmit.co/leobarbosapinturas@gmail.com" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Léo Barbosa Pinturas - Todos os direitos reservados</p>
+        <p>Siga-me nas redes sociais:</p>
+        <a href="https://instagram.com/leo_barboss" target="_blank">Instagram</a> |
+        <a href="https://youtube.com/@leobarbosa7" target="_blank">Youtube</a>
     </footer>
 
     <script>
+        // Função para redirecionar para a página de detalhes
         function verDetalhes(pinturaId) {
             window.location.href = `details.html?id=${pinturaId}`;
+        }
+
+        // Função para filtrar categorias
+        function filtrarCategoria(categoria) {
+            const pinturas = document.querySelectorAll('.painting');
+            pinturas.forEach(pintura => {
+                if (categoria === 'todas' || pintura.classList.contains(categoria)) {
+                    pintura.style.display = 'block';
+                } else {
+                    pintura.style.display = 'none';
+                }
+            });
         }
     </script>
 </body>
