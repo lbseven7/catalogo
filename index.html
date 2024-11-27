@@ -40,6 +40,22 @@
                 <h2>Kombi 1985</h2>
                 <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
                 <br>
+                <article class="painting">
+                    <img src="imagens/pintura1.jpg" alt="Paisagem ao Entardecer">
+                    <h2>Paisagem ao Entardecer</h2>
+                    <p>Tamanho: 50x70cm</p>
+                    <p>Preço: R$ 800,00</p>
+                    <button class="btn-laranja" onclick="verDetalhes('pintura1')">Ver Detalhes</button>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="seuemail@dominio.com">
+                        <input type="hidden" name="item_name" value="Paisagem ao Entardecer">
+                        <input type="hidden" name="amount" value="800.00">
+                        <input type="hidden" name="currency_code" value="BRL">
+                        <input type="submit" value="Comprar Agora" class="btn-pagamento">
+                    </form>
+                </article>
+                
                 <button class="btn-laranja" onclick="verDetalhes('pintura4')"><strong>Saber Mais</strong></button>
             </article>
             <!-- 
