@@ -65,48 +65,71 @@ nav ul li a:hover {
     padding: 20px 0;
 }
 
+/* Cards */
 .painting {
-    background-color: #e7e7e7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: center;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 1, 0.3);
+    background-color: #f9f9f9; /* Fundo claro */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    width: 300px; /* Largura fixa */
+    min-height: 450px; /* Altura mínima */
+    margin: 20px auto; /* Espaçamento entre os cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: flex;
+    flex-direction: column; /* Organização vertical */
+    justify-content: space-between; /* Distribui os elementos verticalmente */
 }
 
+/* Imagens */
 .painting img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: 200px; /* Altura fixa, tornando a imagem quadrada */
+    object-fit: cover; /* Mantém o aspecto e preenche o espaço */
+    border-radius: 5px; /* Bordas arredondadas para um acabamento uniforme */
 }
 
+
+/* Títulos */
 .painting h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: #333;
     margin: 10px 0;
+    text-align: center;
+    word-wrap: break-word; /* Garante quebra de texto longa */
 }
 
+/* Descrições */
 .painting p {
     font-size: 1em;
-    margin: 5px 0;
+    color: #555;
+    text-align: justify; /* Alinha o texto para melhorar a legibilidade */
+    margin: 10px 0;
+    line-height: 1.5; /* Espaçamento entre linhas */
+    overflow: visible; /* Garante que o texto completo seja exibido */
 }
 
 /* Botões */
-button, .btn-laranja {
-    background-color: #f57c00; /* Cor laranja */
-    color: #fff; /* Cor do texto branco */
+.painting button {
+    background-color: #f57c00;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     font-size: 1em;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Botão ocupa a largura total do card */
+    max-width: 250px; /* Limita o tamanho máximo */
+    margin: 0 auto; /* Centraliza o botão */
 }
 
-button:hover, .btn-laranja:hover {
-    background-color: #e65100; /* Tom mais escuro de laranja ao passar o mouse */
-    transform: scale(1.05); /* Pequeno efeito de aumento */
+.painting button:hover {
+    background-color: #e65100; /* Cor de destaque ao passar o mouse */
 }
+
+/* Botões */
+
 
 /* Botão do WhatsApp */
 .botao-whatsapp {
@@ -226,4 +249,135 @@ form button {
 
 form button:hover {
     background-color: #e65100;
+}
+
+.foto-artista {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Estilo da seção Sobre Mim */
+.about-section {
+    display: flex; /* Layout lado a lado */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Largura máxima da seção */
+}
+
+/* Texto da seção */
+.about-text {
+    flex: 1; /* Ocupa metade da largura */
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Imagem */
+.about-image {
+    flex: 1; /* Ocupa metade da largura */
+    text-align: center; /* Centraliza a imagem */
+}
+
+.about-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o espaço */
+    height: auto; /* Mantém as proporções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Alinha os elementos verticalmente em telas menores */
+        text-align: center; /* Centraliza tudo */
+    }
+
+    .about-text {
+        margin-right: 0; /* Remove o espaçamento lateral */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Adiciona espaço entre texto e imagem */
+    }
+}
+
+
+/* Container principal dos detalhes */
+.detalhes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Estilo da imagem */
+.detalhes-imagem {
+    flex: 1 1 45%; /* Ocupa 45% do espaço disponível */
+    text-align: center;
+}
+
+.detalhes-imagem img {
+    max-width: 100%; /* Ajusta a largura ao container */
+    height: auto; /* Mantém as proporções */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilo das informações */
+.detalhes-informacoes {
+    flex: 1 1 45%; /* Ocupa 45% do espaço disponível */
+    text-align: left;
+}
+
+.detalhes-informacoes h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.detalhes-informacoes p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Botão do WhatsApp */
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1da851;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .detalhes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalhes-informacoes {
+        text-align: center;
+    }
 }

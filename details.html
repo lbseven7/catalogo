@@ -12,16 +12,22 @@
     </header>
 
     <main>
-        <section id="detalhes-obra">
-            <img id="obra-imagem" src="" alt="Imagem da Obra">
-            <h2 id="obra-titulo">Título</h2>
-            <p id="obra-descricao">Descrição</p>
-            <p id="obra-tamanho">Tamanho</p>
-            <p id="obra-preco">Preço</p>
-            <!-- Link estilizado como botão -->
-            <!-- Botão de Pagamento para cada Obra -->
-            
-            <a href="https://wa.me/5571992153128?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: " class="botao-whatsapp" target="_blank">Negociar Pelo Whatsapp</a>
+        <section id="detalhes-obra" class="detalhes-container">
+            <!-- Imagem da Obra -->
+            <div class="detalhes-imagem">
+                <img id="obra-imagem" src="" alt="Imagem da Obra">
+            </div>
+
+            <!-- Informações da Obra -->
+            <div class="detalhes-informacoes">
+                <h2 id="obra-titulo">Título</h2>
+                <p id="obra-descricao">Descrição</p>
+                <p id="obra-tamanho">Tamanho</p>
+                <p id="obra-tecnica">Técnica</p>
+                <p id="obra-moldura">Moldura</p>
+                <p id="obra-preco">Preço</p>
+                <a id="contato-whatsapp" href="#" class="botao-whatsapp" target="_blank">Negociar Pelo Whatsapp</a>
+            </div>
         </section>
     </main>
 
@@ -37,6 +43,8 @@
                 titulo: "Entre Linhas, Um Olhar...",
                 descricao: "Esta obra celebra a zebra como um animal extraordinário, uma verdadeira obra do Criador. O contraste marcante de suas listras em preto e branco destaca sua singularidade, enquanto o olhar atento reflete uma serenidade instintiva. O jogo de luz e sombra realça a harmonia natural de sua forma, equilibrando o movimento das linhas e a calma do cenário. A pintura convida o observador a contemplar a beleza e a perfeição de um ser que exemplifica o cuidado e a criatividade da natureza divina.",
                 tamanho: "Tamanho: 85x105cm",
+                tecnica: "Técnica: Óleo sobre Tela de algodão",
+                moldura: "Moldura: não",
                 preco: "Valor:R$ 1.200,00",
                 whatsapp: "https://wa.me/5571992153128?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             },
@@ -44,7 +52,9 @@
                 imagem: "images/entre_o_labor_a amizade.jpg",
                 titulo: "Entre o Labor, a Amizade (2024)",
                 descricao: "Esta obra retrata a simplicidade e a conexão entre o homem e a natureza. Um menino caminha ao lado de seu fiel cão em uma estrada de terra, enquanto um cavalo carrega o peso da rotina. O cenário rural, com suas montanhas ao fundo e vegetação rasteira, evoca um sentimento de nostalgia e tranquilidade. A composição harmoniosa destaca o trabalho, a amizade e a cumplicidade presentes na vida cotidiana do interior, convidando o observador a refletir sobre a beleza das pequenas coisas.",
-                tamanho: "Tamanho: 20x28cm",
+                tamanho: "Tamanho: 85x105cm",
+                tecnica: "Técnica: Óleo sobre mdf",
+                moldura: "Moldura: nãos",
                 preco:  "Valor: R$ 1.200,00",
                 whatsapp: "https://wa.me/5571992153128?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             },
@@ -53,15 +63,17 @@
                 titulo: "Entre as Manchas, um Olhar...",
                 descricao: "Tela original. Versão exclusiva. Com certificado de autenticidade assinado pelo artista",
                 tamanho: "Tamanho: 20x28cm",
-                preco: "Preço: R$100,00",
+                tecnica: "Técnica: Óleo sobre tela de algodão em suporte de mdf 3mm",
+                moldura: "Moldura: não",
+                preco: "Preço: R$ 200,00",
                 whatsapp: "https://wa.me/5571992153128?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             },
             pintura4: {
-                imagem: "images/",
-                titulo: "Entre as chamas, o Alimento...",
-                descricao: "Uma tela ideal para sala, escritório e sala de estar.",
-                tamanho: "Tamanho: 20x28cm",
-                preco: "Preço: R$100,00",
+                imagem: "images/entre_o_caminho_a_luz.jpg",
+                titulo: "À Beira do Caminho, Um Lar...",
+                descricao: "Uma tela que transmite a beleza da paisagem rural e traz o elementoda luz como narrativa principal.",
+                tamanho: "Tamanho: 60x90cm",
+                preco: "Preço: R$650,00",
                 whatsapp: "https://wa.me/5571992153128?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             }
         };
@@ -77,6 +89,8 @@
             document.getElementById('obra-titulo').textContent = pintura.titulo;
             document.getElementById('obra-descricao').textContent = pintura.descricao;
             document.getElementById('obra-tamanho').textContent = pintura.tamanho;
+            document.getElementById('obra-tecnica').textContent = pintura.tecnica || "Técnica não especificada";
+            document.getElementById('obra-moldura').textContent = pintura.moldura || "Sem moldura";
             document.getElementById('obra-preco').textContent = pintura.preco;
             document.getElementById('contato-whatsapp').href = pintura.whatsapp;
         } else {
