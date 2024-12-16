@@ -8,7 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Detalhes da Obra</h1>
+        <section class="section-logo" id="header">
+
+            <div class="logo">
+                <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+            </div>
+            <div>
+    
+                <h1>Detalhes da Obra</h1>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -49,7 +58,7 @@
                 preco: "Valor: R$ 690,00",
                 ano: "Ano: 2024",
                 status: "Status: INDISPONÍVEL",
-                whatsapp: "https://wa.me/557391182932?text=Esta%20Tela%20Foi%20VENDIDA!"
+                whatsapp: ""
             },
             pintura2: {
                 imagem: "images/entre_o_labor_a amizade.jpg",
@@ -60,7 +69,7 @@
                 preco:  "Valor: R$ 650,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
-                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20entre%20o%20labor%20a%20amizade."
             },
             pintura3: {
                 imagem: "images/entre_manchas_um_olhar.jpg",
@@ -71,7 +80,7 @@
                 preco: "Preço: R$ 100,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
-                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20entre%20manchas%20um%20olhar. "
             },
             pintura4: {
                 imagem: "images/entre_caminhos_um_lar.jpg",
@@ -82,7 +91,7 @@
                 preco: "Preço: R$150,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
-                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20à%20beira%20do%20caminho."
             },
             pintura5: {
                 imagem: "images/entre_o_caminho_a_luz.jpg",
@@ -93,7 +102,7 @@
                 preco: "Preço: R$350,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
-                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20do%20caminho%20da%20luz."
             },
 
             pintura6: {
@@ -105,7 +114,7 @@
                 preco: "Preço: R$ 350,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
-                whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela:%20do%20Pato"
+                whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20O%20Navegar%20da%20Leveza."
             }
             
         };
@@ -128,7 +137,7 @@
             document.getElementById('obra-status').textContent = pintura.status;
             document.getElementById('contato-whatsapp').href = pintura.whatsapp;
         } else {
-            document.getElementById('detalhes-obra').innerHTML = "<p>Obra não encontrada.</p>";
+            document.getElementById('detalhes-obra').innerHTML = "<p>Esta tela foi VENDIDA.</p>";
         }
     </script>
 </body>
