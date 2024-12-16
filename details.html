@@ -26,6 +26,8 @@
                 <p id="obra-tecnica">Técnica</p>
                 <p id="obra-moldura">Moldura</p>
                 <p id="obra-preco">Preço</p>
+                <p id="obra-ano">Ano</p>
+                <p id="obra-status">Status</p>
                 <a id="contato-whatsapp" href="#" class="botao-whatsapp" target="_blank">Negociar Pelo Whatsapp</a>
             </div>
         </section>
@@ -41,39 +43,71 @@
             pintura1: {
                 imagem: "images/entre_linhas_um_olhar.jpg",
                 titulo: "Entre Linhas, Um Olhar...",
-                descricao: "Esta obra celebra a zebra como um animal extraordinário, uma verdadeira obra do Criador. O contraste marcante de suas listras em preto e branco destaca sua singularidade, enquanto o olhar atento reflete uma serenidade instintiva. O jogo de luz e sombra realça a harmonia natural de sua forma, equilibrando o movimento das linhas e a calma do cenário. A pintura convida o observador a contemplar a beleza e a perfeição de um ser que exemplifica o cuidado e a criatividade da natureza divina.",
+                descricao: "",
                 tamanho: "Tamanho: 85x105cm",
                 tecnica: "Técnica: Óleo sobre Tela de algodão",
-                preco: "Valor:R$ 1.200,00",
-                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+                preco: "Valor: R$ 690,00",
+                ano: "Ano: 2024",
+                status: "Status: INDISPONÍVEL",
+                whatsapp: "https://wa.me/557391182932?text=Esta%20Tela%20Foi%20VENDIDA!"
             },
             pintura2: {
                 imagem: "images/entre_o_labor_a amizade.jpg",
                 titulo: "Entre o Labor, a Amizade (2024)",
-                descricao: "Esta obra retrata a simplicidade e a conexão entre o homem e a natureza. Um menino caminha ao lado de seu fiel cão em uma estrada de terra, enquanto um cavalo carrega o peso da rotina. O cenário rural, com suas montanhas ao fundo e vegetação rasteira, evoca um sentimento de nostalgia e tranquilidade. A composição harmoniosa destaca o trabalho, a amizade e a cumplicidade presentes na vida cotidiana do interior, convidando o observador a refletir sobre a beleza das pequenas coisas.",
+                descricao: "",
                 tamanho: "Tamanho: 85x105cm",
                 tecnica: "Técnica: Óleo sobre mdf",
-                preco:  "Valor: R$ 1.200,00",
+                preco:  "Valor: R$ 650,00",
+                ano: "Ano: 2024",
+                status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             },
             pintura3: {
                 imagem: "images/entre_manchas_um_olhar.jpg",
                 titulo: "Entre as Manchas, um Olhar...",
-                descricao: "Tela original. Versão exclusiva. Com certificado de autenticidade assinado pelo artista",
+                descricao: "",
                 tamanho: "Tamanho: 20x28cm",
                 tecnica: "Técnica: Óleo sobre tela de algodão em suporte de mdf 3mm",
-                preco: "Preço: R$ 200,00",
+                preco: "Preço: R$ 100,00",
+                ano: "Ano: 2024",
+                status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             },
             pintura4: {
                 imagem: "images/entre_caminhos_um_lar.jpg",
                 titulo: "À Beira do Caminho, Um Lar...",
-                descricao: "Uma tela que transmite a beleza da paisagem rural e traz o elemento da luz como narrativa principal e a reflexão sobre um lar à beira da estrada.",
+                descricao: "",
                 tamanho: "Tamanho: 20x28cm",
                 tecnica: "Técnica: Óleo sobre papel  Paraná em suporte de mdf 3mm",
                 preco: "Preço: R$150,00",
+                ano: "Ano: 2024",
+                status: "Status: DISPONÍVEL",
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+            },
+            pintura5: {
+                imagem: "images/entre_o_caminho_a_luz.jpg",
+                titulo: "Entre o Caminho, a Luz...",
+                descricao: "",
+                tamanho: "Tamanho: 60x90cm",
+                tecnica: "Técnica: Óleo sobre ela de algodão",
+                preco: "Preço: R$350,00",
+                ano: "Ano: 2024",
+                status: "Status: DISPONÍVEL",
+                whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
+            },
+
+            pintura6: {
+                imagem: "images/entre_o_navegar_a_leveza.jpg",
+                titulo: "O Navegar da Leveza",
+                descricao: "",
+                tamanho: "Tamanho: 60x90cm",
+                tecnica: "Técnica: Òleo Sobre Tela",
+                preco: "Preço: R$ 350,00",
+                ano: "Ano: 2024",
+                status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela: "
             }
+            
         };
 
         // Obter o ID da pintura na URL
@@ -90,6 +124,8 @@
             document.getElementById('obra-tecnica').textContent = pintura.tecnica || "Técnica não especificada";
             document.getElementById('obra-moldura').textContent = pintura.moldura || "Sem moldura";
             document.getElementById('obra-preco').textContent = pintura.preco;
+            document.getElementById('obra-ano').textContent = pintura.ano;
+            document.getElementById('obra-status').textContent = pintura.status;
             document.getElementById('contato-whatsapp').href = pintura.whatsapp;
         } else {
             document.getElementById('detalhes-obra').innerHTML = "<p>Obra não encontrada.</p>";

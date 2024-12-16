@@ -20,7 +20,7 @@
         </nav>
         
         
-        <h1>L.Barbosa</h1>
+        <h1>leob.</h1>
         <p>Conheça Minhas Obras Exclusivas!</p>
     </header>
 
@@ -31,15 +31,17 @@
     <main>
         <section id="gallery" class="gallery">
             <article class="painting">
+                <div class="status-vendido">VENDIDO</div>
                 <a href="images/entre_linhas_um_olhar.jpg" class="lightbox">
                     <img src="images/entre_linhas_um_olhar.jpg" alt="Fogão">
                 </a>
-                <h2>"Entre Linhas, Um Olhar..."</h2>
+                <h2>"Entre Listras, Um Olhar..."</h2>
                 <p>Esta obra é Original, não cópia e Exclusiva, com Certificado de Autenticidade Assinado pelo Artista Léo Barbosa. Referência fotográfica de Linus Kersting, disponível em Pexels.</p>
                 <button class="btn-laranja" onclick="verDetalhes('pintura1')"><strong>Saber Mais</strong></button>
             </article>
             
             <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
                 <a href="images/entre_o_labor_a amizade.jpg" class="lightbox">
                     <img src="images/entre_o_labor_a amizade.jpg" alt="Menino com cãos">
                 </a>
@@ -50,6 +52,7 @@
             </article>
            
             <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
                 <a href="images/entre_manchas_um_olhar.jpg" class="lightbox">
                     <img src="images/entre_manchas_um_olhar.jpg" alt="onça">
                 </a>
@@ -60,13 +63,36 @@
             </article>
 
             <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
                 <a href="images/entre_caminhos_um_lar.jpg" class="lightbox">
                     <img src="images/entre_caminhos_um_lar.jpg" alt="lar">
                 </a>
-                <h2>"Entre o Caminho, um Lar"</h2>
+                <h2>"À Beira do Caminho, um Lar"</h2>
                 <p>Esta obra é Original, não cópia e Exclusiva, com Certificado de Autenticiadade Assinado pelo Artista Leo Barbosa. "Referência fotográfica disponível em Pinterest." </p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura4')"><strong>Saber Mais</strong></button>
+            </article>
+
+            <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_o_caminho_a_luz.jpg" class="lightbox">
+                    <img src="images/entre_o_caminho_a_luz.jpg" alt="lar">
+                </a>
+                <h2>"O Caminho da Luz"</h2>
+                <p>Esta obra é Original, não cópia e Exclusiva, com Certificado de Autenticiadade Assinado pelo Artista Leo Barbosa. "Referência fotográfica de Alexandre Reider." </p>
+                <br>
+                <button class="btn-laranja" onclick="verDetalhes('pintura5')"><strong>Saber Mais</strong></button>
+            </article>
+
+            <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_o_navegar_a_leveza.jpg" class="lightbox">
+                    <img src="images/entre_o_navegar_a_leveza.jpg" alt="lar">
+                </a>
+                <h2>"O Navegar da Leveza"</h2>
+                <p>Esta obra é Original, não cópia e Exclusiva, com Certificado de Autenticiadade Assinado pelo Artista Leo Barbosa. "Referência fotográfica de Alexandre Reider." </p>
+                <br>
+                <button class="btn-laranja" onclick="verDetalhes('pintura6')"><strong>Saber Mais</strong></button>
             </article>
         </section>
     </main>
@@ -97,26 +123,18 @@
             <p>Visitas ao site</p>
         </div>
     </footer>
-    
-    
 
-    <script>
-        // Função para redirecionar para a página de detalhes
-        function verDetalhes(pinturaId) {
-            window.location.href = `details.html?id=${pinturaId}`;
-        }
-
-        // Função para filtrar categorias
-        function filtrarCategoria(categoria) {
-            const pinturas = document.querySelectorAll('.painting');
-            pinturas.forEach(pintura => {
-                if (categoria === 'todas' || pintura.classList.contains(categoria)) {
-                    pintura.style.display = 'block';
-                } else {
-                    pintura.style.display = 'none';
-                }
-            });
-        }
-    </script>
+         <!-- Script -->
+         <script>
+            // IDs das pinturas vendidas
+           
+           
+    
+            // Função para redirecionar para detalhes
+            function verDetalhes(pinturaId) {
+                window.location.href = `details.html?id=${pinturaId}`;
+            }
+        </script>
+    
 </body>
 </html>

@@ -58,3 +58,37 @@
     </script>
 </body>
 </html>
+
+     <!-- Script -->
+    <script>
+        // IDs das pinturas vendidas
+        const vendidos = ["pintura1", ""]; // Adicione os IDs das pinturas vendidas aqui
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const paintings = document.querySelectorAll(".painting");
+
+            paintings.forEach(painting => {
+                const id = painting.getAttribute("data-id");
+
+                // Verifica se está na lista de vendidos
+                if (vendidos.includes(id)) {
+                    // Exibe o marcador de "VENDIDO"
+                    const statusVendido = painting.querySelector(".status-vendido");
+                    if (statusVendido) {
+                        statusVendido.style.display = "block";
+                    }
+
+                    // Oculta o botão de WhatsApp
+                    const whatsappButton = painting.querySelector(".whatsapp-btn");
+                    if (whatsappButton) {
+                        whatsappButton.style.display = "none";
+                    }
+                }
+            });
+        });
+
+        // Função para redirecionar para detalhes
+        function verDetalhes(pinturaId) {
+            window.location.href = `details.html?id=${pinturaId}`;
+        }
+    </script>
