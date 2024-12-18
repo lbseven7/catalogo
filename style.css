@@ -507,4 +507,11 @@ footer p {
         .btn-laranja:hover {
             background-color: #e65100;
         }
+
+        .descricao {
+            color: rgb(196, 196, 196) !important;
+            font-size: 12px !important;
+            margin-top: 20px;
+            line-height: 1.3;
+        }
  
