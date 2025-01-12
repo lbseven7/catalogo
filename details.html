@@ -33,8 +33,8 @@
                 <p id="obra-descricao">Descrição</p>
                 <p id="obra-tamanho">Tamanho</p>
                 <p id="obra-tecnica">Técnica</p>
-                <p id="obra-moldura">Moldura</p>
-                <p id="obra-preco">Preço</p>
+                
+                <strong><p id="obra-preco">Preço</p></strong>
                 <p id="obra-ano">Ano</p>
                 <p id="obra-status">Status</p>
                 <a id="contato-whatsapp" href="#" class="botao-whatsapp" target="_blank">Comprar</a>
@@ -55,9 +55,9 @@
                 descricao: "",
                 tamanho: "Tamanho: 85x105cm",
                 tecnica: "Técnica: Óleo sobre Tela de algodão",
-                preco: "",
+                preço: "R$: 600,00",
                 ano: "Ano: 2024",
-                status: "Status: INDISPONÍVEL",
+                status: "Status: VENDIDO",
                 whatsapp: ""
             },
             pintura2: {
@@ -66,7 +66,7 @@
                 descricao: "",
                 tamanho: "Tamanho: 85x105cm",
                 tecnica: "Técnica: Óleo sobre mdf",
-                preco:  "",
+                preco: "R$: 600,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20entre%20o%20labor%20a%20amizade."
@@ -74,7 +74,7 @@
             pintura3: {
                 imagem: "images/entre_manchas_um_olhar.jpg",
                 titulo: "Entre as Manchas, um Olhar...",
-                descricao: "",
+                descricao: "R$: 650,00",
                 tamanho: "Tamanho: 20x28cm",
                 tecnica: "Técnica: Óleo sobre tela de algodão em suporte de mdf 3mm",
                 preco: "",
@@ -88,7 +88,7 @@
                 descricao: "",
                 tamanho: "Tamanho: 20x28cm",
                 tecnica: "Técnica: Óleo sobre papel  Paraná em suporte de mdf 3mm",
-                preco: "",
+                preco: "R$ 350,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20à%20beira%20do%20caminho."
@@ -99,7 +99,7 @@
                 descricao: "",
                 tamanho: "Tamanho: 60x90cm",
                 tecnica: "Técnica: Óleo sobre ela de algodão",
-                preco: "",
+                preco: "R$ 550,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/557391182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20do%20caminho%20da%20luz."
@@ -111,7 +111,7 @@
                 descricao: "",
                 tamanho: "Tamanho: 60x90cm",
                 tecnica: "Técnica: Òleo Sobre Tela",
-                preco: "",
+                preco: "R$450,00",
                 ano: "Ano: 2024",
                 status: "Status: DISPONÍVEL",
                 whatsapp: "https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa,%20tenho%20interesse%20na%20tela%20O%20Navegar%20da%20Leveza."
@@ -131,7 +131,7 @@
             document.getElementById('obra-descricao').textContent = pintura.descricao;
             document.getElementById('obra-tamanho').textContent = pintura.tamanho;
             document.getElementById('obra-tecnica').textContent = pintura.tecnica || "Técnica não especificada";
-            document.getElementById('obra-moldura').textContent = pintura.moldura || "Sem moldura";
+            
             document.getElementById('obra-preco').textContent = pintura.preco;
             document.getElementById('obra-ano').textContent = pintura.ano;
             document.getElementById('obra-status').textContent = pintura.status;
