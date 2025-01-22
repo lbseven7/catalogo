@@ -462,6 +462,19 @@ footer p {
             z-index: 1;
         }
 
+        .status-aguarde {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgb(55, 74, 253);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            font-weight: bold;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
         .painting {
             position: relative;
             background-color: #f9f9f9;
