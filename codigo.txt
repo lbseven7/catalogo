@@ -5,90 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Pinturas - Léo Barbosa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
+    <!-- Cabeçalho com Menu de Navegação -->
     <header>
-        <h1>L.Barbosa</h1>
-        <p>Conheça Minhas Obras Exclusivas!</p>
+        
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+                </div>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        
+        <h2>Pinturas Exclusivas</h2>
+        <p>Com Certificado de Autenticidade Assinado pelo Artista!</p>
     </header>
+  
 
+    <!-- Galeria -->
     <main>
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <article class="painting">
-                <img src="images/fogao_lenha.jpg" alt="Fogão">
-                <h2>Fogão de Lenha I</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
-                <br>
-                <button class="btn-laranja" onclick="verDetalhes('pintura1')"><strong>Saber Mais</strong></button>
+                <div class="status-vendido">VENDIDO</div>
+                <a href="images/entre_linhas_um_olhar.jpg" class="lightbox">
+                    <img src="images/entre_linhas_um_olhar.jpg" alt="Fogão">
+                </a>
+                <h2>"Entre Listras, Um Olhar..."</h2>
+                <p>Esta Tela faz parte de uma série monocromática produzida em 2024.</p>
+                <p class="descricao">Referência fotográfica: Linus Kersting, disponível em Pexels.</p>
+                <button class="btn-laranja" onclick="verDetalhes('')"><strong>Saber Mais</strong></button>
             </article>
+            
             <article class="painting">
-                <img src="images/fogão_de_lenha.JPG" alt="Abstrato colorido">
-                <h2>Fogão de Lenha II</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_o_labor_a amizade.jpg" class="lightbox">
+                    <img src="images/entre_o_labor_a amizade.jpg" alt="Menino com cãos">
+                </a>
+                <h2>"Entre o Labor, a Amizade..."</h2>
+                <p>Esta tela foi a primeira da série monocromática realizada em 2024. Em meio ao labor diário tem espaço para o companheirismo e interação entre homem e animais.</p>
+                <p class="descricao">Referência fotográfica: Marcos Lamas, disponível em Pexels." </p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura2')"><strong>Saber Mais</strong></button>
             </article>
+           
             <article class="painting">
-                <img src="images/ferrugem.jpg" alt="Carro Antigo">
-                <h2>Carros e Ferrugem</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_manchas_um_olhar.jpg" class="lightbox">
+                    <img src="images/entre_manchas_um_olhar.jpg" alt="onça">
+                </a>
+                <h2>"Entre Manchas, um Olhar..."</h2>
+                <p>Esta tela faz parte de uma coleção de pequenos formatos (20x28) e retrata a onça pintada, animal fantástico pelo seu porte e bela pelagem.</p>
+                <p class="descricao">Referência fotográfica: Gerada por IA, disponível em Pinterest." </p>
                 <br>
                 <button class="btn-laranja" onclick="verDetalhes('pintura3')"><strong>Saber Mais</strong></button>
             </article>
+
             <article class="painting">
-                <img src="images/kombi_antiga.JPG" alt="">
-                <h2>Kombi 1985</h2>
-                <p>Esta obra é original, não cópia <br>e exclusiva. Faz parte de uma coleção criada em 2024.</p>
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_caminhos_um_lar.jpg" class="lightbox">
+                    <img src="images/entre_caminhos_um_lar.jpg" alt="lar">
+                </a>
+                <h2>"À Beira do Caminho, um Lar"</h2>
+                <p>Esta tela faz parte de uma coleção de pequenos formatos (20x28). A paisagem rural é um dos meus temas prediletos. A beleza e quietude do campo quando não encanta, inspira.</p>
+                <p class="descricao"> Referência fotográfica: Pinterest. </p>
                 <br>
-                
                 <button class="btn-laranja" onclick="verDetalhes('pintura4')"><strong>Saber Mais</strong></button>
             </article>
-            
+
+            <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_o_caminho_a_luz.jpg" class="lightbox">
+                    <img src="images/entre_o_caminho_a_luz.jpg" alt="lar">
+                </a>
+                <h2>"O Caminho da Luz"</h2>
+                <p>Estudo realizado apartir de aula do professor Alexandre Reider. Esta tela faz parte da série monocromática produzida em 2024.</p>
+                <p class="descricao">Referência fotográfica: Alexandre Reider. </p>
+                <br>
+                <button class="btn-laranja" onclick="verDetalhes('pintura5')"><strong>Saber Mais</strong></button>
+            </article>
+
+            <article class="painting">
+                <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/entre_o_navegar_a_leveza.jpg" class="lightbox">
+                    <img src="images/entre_o_navegar_a_leveza.jpg" alt="lar">
+                </a>
+                <h2>"No Navegar, a Leveza"</h2>
+                <p>A inspiração para esta tela veio do nosso quintal. Um pato navega suavemente em águas tranquilas e chama atenção pelo seu reflexo na água.</p>
+                <p class="descricao">Referência fotográfica: Alexsandro Barbosa. </p>
+                <br>
+                <button class="btn-laranja" onclick="verDetalhes('pintura6')"><strong>Saber Mais</strong></button>
+            </article>
+
+            <article class="painting">
+                 <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                 <div class="status-disponivel">DISPONÍVEL</div>
+                <a href="images/o-gigante-naval.jpg" class="lightbox">
+                    <img src="images/o-gigante-naval.jpg" alt="navio">
+                </a>
+                <h2>"O Gigante Naval"</h2>
+                <p>Esta tela foi pintada na cidade de Aracajú (Se) durante as férias do artista. </p>
+                <p class="descricao">Referência fotográfica: Alexsandro Barbosa. </p>
+                <button class="btn-laranja" onclick="verDetalhes('pintura7')"><strong>Saber Mais</strong></button>
+            </article>
+
+            <article class="painting">
+                 <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                 <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                 <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                 <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                 <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                 <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura7')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                <!-- <div class="status-disponivel">DISPONÍVEL</div>
+                <div class="status-vendido">VENDIDO</div> -->
+                <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
+
+            <article class="painting">
+                <!-- <div class="status-disponivel">DISPONÍVEL</div> -->
+                <div class="status-aguarde">AGUARDE</div>
+                <a href="images/" class="lightbox">
+                    <img src="images/logo_black_leob.jpg" alt="lar">
+                </a>
+                <h2>"Em Breve Mais Obras!"</h2>
+                <!-- <button class="btn-laranja" onclick="verDetalhes('pintura8')"><strong>Saber Mais</strong></button> -->
+            </article>
         </section>
     </main>
 
+
     <footer>
         <p>&copy; 2024 Léo Barbosa Pinturas - Todos os direitos reservados</p>
+        <p>Siga-me nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/leob_pinturas" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@leob-pinturas" target="_blank" class="social-link">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/leobarbosa-dev/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa," target="_blank" class="social-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="visit-counter">
+            <!-- Contador de visitas -->
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=17827542&style=0038&nbdigits=5&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
+           
+            <p>Visitas ao site</p>
+        </div>
     </footer>
 
-    <script>
-        function verDetalhes(pinturaId) {
-            window.location.href = `details.html?id=${pinturaId}`;
-        }
-    </script>
+         <!-- Script -->
+         <script>
+            // IDs das pinturas vendidas
+           
+           
+    
+            // Função para redirecionar para detalhes
+            function verDetalhes(pinturaId) {
+                window.location.href = `details.html?id=${pinturaId}`;
+            }
+        </script>
+    
 </body>
 </html>
-
-     <!-- Script -->
-    <script>
-        // IDs das pinturas vendidas
-        const vendidos = ["pintura1", ""]; // Adicione os IDs das pinturas vendidas aqui
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const paintings = document.querySelectorAll(".painting");
-
-            paintings.forEach(painting => {
-                const id = painting.getAttribute("data-id");
-
-                // Verifica se está na lista de vendidos
-                if (vendidos.includes(id)) {
-                    // Exibe o marcador de "VENDIDO"
-                    const statusVendido = painting.querySelector(".status-vendido");
-                    if (statusVendido) {
-                        statusVendido.style.display = "block";
-                    }
-
-                    // Oculta o botão de WhatsApp
-                    const whatsappButton = painting.querySelector(".whatsapp-btn");
-                    if (whatsappButton) {
-                        whatsappButton.style.display = "none";
-                    }
-                }
-            });
-        });
-
-        // Função para redirecionar para detalhes
-        function verDetalhes(pinturaId) {
-            window.location.href = `details.html?id=${pinturaId}`;
-        }
-    </script>
