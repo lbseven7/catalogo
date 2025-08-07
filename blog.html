@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Léo Barbosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+                </div>
+                <li><a href="index.html#gallery">Galeria</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <!-- <li><a href="blog.html" class="active">Blog</a></li> -->
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-container">
+            <h1 class="page-title">Blog do Artista</h1>
+            
+            <!-- Artigo do Blog -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <img src="images/placeholder-blog.jpg" alt="Processo criativo">
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">Arte na Escola: O Artista e Sua Arte</h2>
+                    <div class="post-meta">
+                        <span class="post-date">01 de Agosto, 2025</span>
+                        <span class="post-category">Exposição de pinturas do artista Leo Barbosa</span>
+                    </div>
+                    <p class="post-excerpt">Neste artigo, compartilho os bastidores da criação da obra "Entre Listras, Um Olhar", desde a inspiração inicial até os desafios técnicos enfrentados...</p>
+                    <a href="post.html?id=1" class="btn-laranja">Ler mais</a>
+                </div>
+            </article>
+            
+            <!-- Mais artigos do blog seguiriam o mesmo padrão -->
+            <article class="blog-post">
+                <div class="post-thumbnail">
+                    <img src="images/placeholder-blog2.jpg" alt="Exposição">
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">Próxima Exposição: Cores do Brasil</h2>
+                    <div class="post-meta">
+                        <span class="post-date">5 de Junho, 2024</span>
+                        <span class="post-category">Eventos</span>
+                    </div>
+                    <p class="post-excerpt">Tenho o prazer de anunciar minha participação na exposição coletiva "Cores do Brasil", que acontecerá no próximo mês...</p>
+                    <a href="post.html?id=2" class="btn-laranja">Ler mais</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Léo Barbosa Pinturas - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="btn-voltar-topo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Script para o botão Voltar ao Topo
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-voltar-topo").style.display = "flex";
+            } else {
+                document.getElementById("btn-voltar-topo").style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
