@@ -53,7 +53,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: #f57c00;
+}
+
+nav ul li a.active {
+    background-color: #f57c00;
 }
 
 /* Galeria */
@@ -402,6 +406,10 @@ footer p {
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
+}
+
+.social-icons a:hover {
+    color: #f57c00; 
 }
 
 .social-link {
