@@ -11,17 +11,20 @@
 <body>
     <!-- Cabeçalho com Menu de Navegação -->
     <header>
-        
-        <nav>
-            <ul>
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
-                </div>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
+        <!-- Cabeçalho com Menu de Navegação -->
+        <header>
+            <nav>
+                <ul>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+                    </div>
+                    <li><a href="#gallery" class="active">Galeria</a></li>
+                    <li><a href="about.html">Sobre Mim</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
         
         
     </header>
@@ -43,7 +46,7 @@
             <article class="painting">
                 <div class="status-disponivel">DISPONÍVEL</div>
                 <a href="images/entre_o_labor_a amizade.jpg" class="lightbox">
-                    <img src="images/entre_o_labor_a amizade.jpg" alt="Menino com cãos">
+                    <img src="images/entre_o_labor_a amizade.jpg" alt="Menino com cão">
                 </a>
                 <h2>"Entre o Labor, a Amizade..."</h2>
                 <p>Esta tela foi a primeira da série monocromática realizada em 2024. Em meio ao labor diário tem espaço para o companheirismo e interação entre homem e animais.</p>
@@ -262,3 +265,51 @@
     
 </body>
 </html>
+
+
+<!-- Adicionar após a seção da galeria e antes do footer -->
+<section class="blog-highlight">
+    <div class="container">
+        <h2 class="section-title">Últimas do Blog</h2>
+        <div class="blog-highlight-grid">
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="images/entre_linhas_um_olhar.jpg" alt="Processo criativo">
+                </div>
+                <div class="blog-card-content">
+                    <h3>Mostra de Arte</h3>
+                    <p class="blog-card-date">12 de Junho, 2024</p>
+                    <p class="blog-card-excerpt">Neste artigo, compartilho os bastidores da criação da obra "Entre Listras, Um Olhar"...</p>
+                    <a href="post.html?id=1" class="btn-laranja">Ler mais</a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="images/placeholder-blog2.jpg" alt="Exposição">
+                </div>
+                <div class="blog-card-content">
+                    <h3>Próxima Exposição: Cores do Brasil</h3>
+                    <p class="blog-card-date">5 de Junho, 2024</p>
+                    <p class="blog-card-excerpt">Tenho o prazer de anunciar minha participação na exposição coletiva "Cores do Brasil"...</p>
+                    <a href="post.html?id=2" class="btn-laranja">Ler mais</a>
+                </div>
+            </article>
+            
+            <article class="blog-card">
+                <div class="blog-card-image">
+                    <img src="images/placeholder-blog3.jpg" alt="Técnica de pintura">
+                </div>
+                <div class="blog-card-content">
+                    <h3>Técnicas de Pintura: Monocromia</h3>
+                    <p class="blog-card-date">28 de Maio, 2024</p>
+                    <p class="blog-card-excerpt">Explorando as possibilidades expressivas da pintura monocromática...</p>
+                    <a href="post.html?id=3" class="btn-laranja">Ler mais</a>
+                </div>
+            </article>
+        </div>
+        <div class="blog-highlight-footer">
+            <a href="blog.html" class="btn-laranja btn-large">Ver Todos os Posts</a>
+        </div>
+    </div>
+</section>
