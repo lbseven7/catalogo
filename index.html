@@ -222,15 +222,43 @@
         </div>
     </footer>
 
-         <!-- Script -->
-         <script>
-            // IDs das pinturas vendidas
-           
-            // Função para redirecionar para detalhes
-            function verDetalhes(pinturaId) {
-                window.location.href = `details.html?id=${pinturaId}`;
+    <!-- Botão Voltar ao Topo -->
+    <a id="btn-voltar-topo" href="#" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Script -->
+    <script>
+        // IDs das pinturas vendidas
+       
+        // Função para redirecionar para detalhes
+        function verDetalhes(pinturaId) {
+            window.location.href = `details.html?id=${pinturaId}`;
+        }
+
+        // Script para o botão Voltar ao Topo
+        window.onscroll = function() {
+            mostrarBotaoTopo();
+        };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btn-voltar-topo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "flex";
+            } else {
+                btnTopo.style.display = "none";
             }
-        </script>
+        }
+
+        // Função para rolar suavemente ao topo
+        document.getElementById("btn-voltar-topo").addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
     
 </body>
 </html>
