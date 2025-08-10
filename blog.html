@@ -17,7 +17,6 @@
                 </div>
                 <li><a href="index.html#gallery">Galeria</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <!-- <li><a href="blog.html" class="active">Blog</a></li> -->
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
@@ -27,37 +26,54 @@
         <section class="blog-container">
             <h1 class="page-title">Blog do Artista</h1>
             
-            <!-- Artigo do Blog -->
-            <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="images/site-leob-turma.JPG" alt="Escola Monteiro Lobato">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Falando Sobre Arte no Colégio Monteiro Lobato</h2>
-                    <div class="post-meta">
-                        <span class="post-date">01 de Agosto, 2025</span>
-                        <span class="post-category">Palestra, exposição e roda de conversa com Leo Barbosa</span>
+            <!-- Artigos do Blog -->
+            <section class="blog-posts">
+                <h2 class="section-title">Artigos</h2>
+                <article class="blog-post">
+                    <div class="post-thumbnail">
+                        <img src="images/site-leob-turma.JPG" alt="Escola Monteiro Lobato">
                     </div>
-                    <p class="post-excerpt">Estive no Colégio Monteiro Lobato falando um pouco para  os alunos sobre minha arte e vida.</p>
-                    <a href="post.html?id=1" class="btn-laranja">Ler mais</a>
-                </div>
-            </article>
-            
-            <!-- Mais artigos do blog seguiriam o mesmo padrão -->
-            <!-- <article class="blog-post">
-                <div class="post-thumbnail">
-                    <img src="images/placeholder-blog2.jpg" alt="Exposição">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Próxima Exposição: Cores do Brasil</h2>
-                    <div class="post-meta">
-                        <span class="post-date">5 de Junho, 2024</span>
-                        <span class="post-category">Eventos</span>
+                    <div class="post-content">
+                        <h2 class="post-title">Exposição no Colégio Monteiro Lobato</h2>
+                        <div class="post-meta">
+                            <span class="post-date">01 de Agosto, 2025</span>
+                            <span class="post-category">Exposição de pinturas do artista Leo Barbosa</span>
+                        </div>
+                        <p class="post-excerpt">Estive no Colégio Monteiro Lobato falando um pouco para os alunos sobre minha arte e vida.</p>
+                        <a href="post.html?id=1" class="btn-laranja">Ler mais</a>
                     </div>
-                    <p class="post-excerpt">Tenho o prazer de anunciar minha participação na exposição coletiva "Cores do Brasil", que acontecerá no próximo mês...</p>
-                    <a href="post.html?id=2" class="btn-laranja">Ler mais</a>
+                </article>
+                
+                <!-- <article class="blog-post">
+                    <div class="post-thumbnail">
+                        <img src="images/placeholder-blog2.jpg" alt="Exposição">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Próxima Exposição: Cores do Brasil</h2>
+                        <div class="post-meta">
+                            <span class="post-date">5 de Junho, 2024</span>
+                            <span class="post-category">Eventos</span>
+                        </div>
+                        <p class="post-excerpt">Tenho o prazer de anunciar minha participação na exposição coletiva "Cores do Brasil", que acontecerá no próximo mês...</p>
+                        <a href="post.html?id=2" class="btn-laranja">Ler mais</a>
+                    </div>
+                </article> -->
+            </section>
+
+            <!-- Seção de Vídeos -->
+            <section class="videos-section">
+                <h2 class="section-title">Vídeos</h2>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0tvKkURICCs?si=aV7M1JJWHbRWVhn2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Palestra no Colégio Monteiro Lobato</h3>
+                        <p class="video-description">No Colégio Monteiro Lobato, fui palestrante sobre minha arte e vida. Foi uma experiência incrível!</p>
+                    </div>
+                    <!-- Adicione mais cards de vídeo conforme necessário -->
                 </div>
-            </article> -->
+            </section>
         </section>
     </main>
 
@@ -70,13 +86,11 @@
         </div>
     </footer>
 
-    <!-- Botão Voltar ao Topo -->
     <a href="#" id="btn-voltar-topo" title="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <script>
-        // Script para o botão Voltar ao Topo
         window.onscroll = function() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("btn-voltar-topo").style.display = "flex";
