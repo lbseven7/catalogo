@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposições - Léo Barbosa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com Menu de Navegação -->
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+                </div>
+                <li><a href="index.html#gallery">Galeria</a></li>
+                <li><a href="exposicoes.html" class="active">Exposições</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="exhibitions-container">
+            <h1 class="page-title">Exposições</h1>
+
+            <div class="exhibition-intro">
+                <p>Explore as exposições realizadas, com detalhes de datas, locais, obras apresentadas e registros fotográficos. Esta página destaca eventos passados e futuras participações.</p>
+            </div>
+
+            <div class="exhibition-grid">
+                <!-- Card de Exposição -->
+                <article class="exhibition-card">
+                    <div class="exhibition-image">
+                        <img src="images/site-leob.JPG" alt="Mostra de Arte">
+                    </div>
+                    <div class="exhibition-content">
+                        <h3>Mostra de Arte</h3>
+                        <div class="exhibition-meta">
+                            <span class="meta-item"><i class="far fa-calendar"></i> 15/07/2024</span>
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Salvador, BA</span>
+                        </div>
+                        <p>Exposição coletiva apresentando obras da série monocromática produzida em 2024, com enfoque em texturas e luz.</p>
+                        <div class="exhibition-actions">
+                            <a href="#" class="btn-laranja">Ver galeria</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="exhibition-card">
+                    <div class="exhibition-image">
+                        <img src="images/site-leob-turma.JPG" alt="Exposição Cores do Brasil">
+                    </div>
+                    <div class="exhibition-content">
+                        <h3>Cores do Brasil</h3>
+                        <div class="exhibition-meta">
+                            <span class="meta-item"><i class="far fa-calendar"></i> 10/05/2024</span>
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Aracaju, SE</span>
+                        </div>
+                        <p>Participação em exposição coletiva com artistas convidados, apresentando obras de pequeno formato e temas da fauna brasileira.</p>
+                        <div class="exhibition-actions">
+                            <a href="#" class="btn-laranja">Ver galeria</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Exemplo de próxima exposição -->
+                <article class="exhibition-card upcoming">
+                    <div class="exhibition-image">
+                        <img src="images/logo_black_leob.jpg" alt="Próxima Exposição">
+                    </div>
+                    <div class="exhibition-content">
+                        <h3>Próxima Exposição</h3>
+                        <div class="exhibition-meta">
+                            <span class="meta-item"><i class="far fa-calendar"></i> Em breve</span>
+                            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> A confirmar</span>
+                        </div>
+                        <p>Fique atento à próxima exposição com novas obras e técnicas exploradas recentemente.</p>
+                        <div class="exhibition-actions">
+                            <a href="blog.html" class="btn-laranja">Saiba mais no Blog</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Léo Barbosa Pinturas - Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" id="btn-voltar-topo" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Visibilidade do botão Voltar ao Topo
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btn-voltar-topo").style.display = "flex";
+            } else {
+                document.getElementById("btn-voltar-topo").style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
