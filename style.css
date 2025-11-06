@@ -811,6 +811,63 @@ footer p {
 @media (max-width: 768px) {
     .exhibition-image { height: 180px; }
 }
+
+/* ================================ */
+/* Contato - Ícones Harmonizados    */
+/* ================================ */
+.contato-social {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contato-social h2 {
+    margin-bottom: 8px;
+}
+
+.contato-social p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.contato-social .social-icons {
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.contato-social .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    color: #333;
+    font-size: 24px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+}
+
+.contato-social .social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    border-color: #f57c00;
+    color: #f57c00;
+    background-color: #fff;
+}
+
+@media (max-width: 480px) {
+    .contato-social .social-link {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+}
 /* Estilos para a seção de vídeos */
 .videos-section {
     margin-bottom: 60px;
@@ -3477,3 +3534,5 @@ footer p {
     transform: rotate(-3deg);
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
+
+

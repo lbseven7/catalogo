@@ -4,51 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Léo Barbosa</title>
+    <title>Links e Redes Sociais - Léo Barbosa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        .links-page-main {
+            min-height: 70vh; /* Garante que o conteúdo ocupe a maior parte da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .social-links-container {
+            max-width: 500px;
+            width: 100%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .social-button {
+            display: block; /* Cada link em sua própria linha */
+            background-color: #333; /* Fundo escuro para contraste */
+            color: #fff;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-button i {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        .social-button:hover {
+            background-color: #FF5722; /* Laranja de destaque */
+            color: #fff;
+        }
+        
+        .social-button.whatsapp {
+            background-color: #25D366; /* Verde WhatsApp */
+        }
+
+        .social-button.instagram {
+            background-color: #E1306C; /* Rosa/Roxo Instagram */
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Galeria</a></li>
-                <!-- <li><a href="exposicoes.html">Exposições</a></li> -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_black_leob.jpg" alt="logo-leob"></a>
+                </div>
+                <li><a href="index.html#gallery">Galeria</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="contact.html" class="active">Contato</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
-        <h1>Contato</h1>
     </header>
 
-    <main>
-        <div>
-            <p>Siga-me nas redes sociais:</p>
-            <div class="social-icons">
-                <a href="https://instagram.com/leob_pinturas" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@leob-pinturas" target="_blank" class="social-link">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/leobarbosa-dev/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa," target="_blank" class="social-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-            <div class="visit-counter">
+    <main class="links-page-main">
+        <h1 class="section-title" style="margin-bottom: 5px;">Léo Barbosa Pinturas</h1>
+        <p style="font-style: italic; color: #555;">Clique abaixo para se conectar:</p>
 
-            </div>
+        <div class="social-links-container">
+            
+            <a href="index.html" class="social-button" style="background-color: #FF5722;">
+                <i class="fas fa-palette"></i> Ver o Catálogo de Obras
+            </a>
+            
+            <a href="https://wa.me/5573991182932?text=Olá%20Léo%20Barbosa,gostaria%20de%20saber%20mais%20sobre%20suas%20obras." target="_blank" class="social-button whatsapp">
+                <i class="fab fa-whatsapp"></i> Conversar via WhatsApp
+            </a>
+            
+            <a href="https://instagram.com/leob_pinturas" target="_blank" class="social-button instagram">
+                <i class="fab fa-instagram"></i> Acompanhe no Instagram
+            </a>
+            
+            <a href="https://www.youtube.com/@leob-pinturas" target="_blank" class="social-button">
+                <i class="fab fa-youtube"></i> Ver Vídeos no YouTube
+            </a>
+            
+            <a href="https://www.linkedin.com/in/leobarbosa-dev/" target="_blank" class="social-button">
+                <i class="fab fa-linkedin"></i> Perfil Profissional (LinkedIn)
+            </a>
+
+            <!-- <a href="mailto:leob.com.br@gmail.com" target="_blank" class="social-button" style="background-color: #007bb5;">
+                <i class="fas fa-envelope"></i> Enviar um E-mail
+            </a> -->
+            
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Léo Barbosa Pinturas - Todos os direitos reservados</p>
-        <p><a href="index.html">Voltar à Galeria</a></p>
-    </footer>
+   
+    <a id="btn-voltar-topo" href="#" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // ... script do botão de voltar ao topo ...
+        window.onscroll = function () {
+            mostrarBotaoTopo();
+        };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btn-voltar-topo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "flex";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
+        document.getElementById("btn-voltar-topo").addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+
 </body>
 
 </html>
