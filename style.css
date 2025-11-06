@@ -905,7 +905,7 @@ footer p {
     padding-bottom: 15px;
 }
 
-.page-title::after {
+/* .page-title::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -914,7 +914,7 @@ footer p {
     width: 100px;
     height: 3px;
     background-color: #f57c00;
-}
+} */
 
 /* Artigos do blog na página principal */
 .blog-post {
