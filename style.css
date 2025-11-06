@@ -3535,4 +3535,137 @@ footer p {
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 }
 
+/* --- Estilos para a Página Sobre Mim (about.html) --- */
 
+.about-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.artist-presentation-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.artist-photo {
+    flex: 1; /* Ocupa o restante do espaço em telas grandes */
+    min-width: 250px; /* Garante tamanho mínimo */
+    max-width: 350px;
+    margin: 0 auto; /* Centraliza em telas pequenas */
+    border: 5px solid #FF5722; /* Borda de destaque laranja */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.artist-photo img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.artist-intro {
+    flex: 2;
+    min-width: 300px;
+}
+
+.artist-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.artist-intro p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 60px auto;
+    width: 80%;
+}
+
+/* Filosofia (Cards) */
+.philosophy-section {
+    padding: 20px 0;
+}
+
+.philosophy-section h2 {
+    margin-bottom: 30px;
+}
+
+.philosophy-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.philosophy-card {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.philosophy-card i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #FF5722; /* Ícones Laranja */
+}
+
+.philosophy-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Chamada para Ação (CTA) */
+.cta-about {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.cta-about .btn-large {
+    margin: 10px 15px;
+    display: inline-block;
+}
+
+/* Estilo para botão outline */
+.btn-outline {
+    background-color: transparent !important;
+    border: 2px solid #FF5722 !important;
+    color: #FF5722 !important;
+}
+
+.btn-outline:hover {
+    background-color: #FF5722 !important;
+    color: #fff !important;
+}
+
+/* Responsividade (Ajuste a ordem em telas pequenas) */
+@media (max-width: 768px) {
+    .artist-presentation-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .artist-photo {
+        margin-bottom: 20px;
+    }
+
+    .artist-intro {
+        text-align: center;
+    }
+}
