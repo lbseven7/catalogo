@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- Cabeçalho com Menu de Navegação -->
     <header>
@@ -17,7 +19,7 @@
                 </div>
                 <li><a href="index.html#gallery">Galeria</a></li>
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="#" class="active">Blog</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
@@ -32,42 +34,57 @@
                     <span id="post-category">Processo Criativo</span>
                 </div>
             </div>
-            
+
             <div class="post-featured-image">
                 <img id="post-image" src="images/placeholder-blog.jpg" alt="Processo criativo">
             </div>
-            
+
             <div class="post-body" id="post-content">
                 <!-- O conteúdo será preenchido via JavaScript -->
-                <p>Neste artigo, compartilho os bastidores da criação da obra "Entre Listras, Um Olhar", desde a inspiração inicial até os desafios técnicos enfrentados durante o processo.</p>
-                
-                <p>A inspiração para esta obra veio durante uma visita ao zoológico, onde pude observar de perto a majestade das zebras. O que mais me chamou atenção não foram apenas as listras características, mas o olhar profundo e quase humano desses animais.</p>
-                
+                <p>Neste artigo, compartilho os bastidores da criação da obra "Entre Listras, Um Olhar", desde a
+                    inspiração inicial até os desafios técnicos enfrentados durante o processo.</p>
+
+                <p>A inspiração para esta obra veio quando um colega de trabalho me mostrou a proteção de tela de seu
+                    notebook, era a imagem de uma zebra. Logo, decidi criar uma obra que transmitisse a beleza daquele
+                    belo
+                    animal.</p>
+
                 <h2>O Processo de Criação</h2>
-                
-                <p>Iniciei com diversos estudos em carvão, buscando capturar a essência do olhar da zebra. Após várias tentativas, encontrei o enquadramento perfeito que destacava tanto as listras quanto o olhar penetrante do animal.</p>
-                
-                <p>Para a pintura final, optei por uma abordagem monocromática, utilizando apenas tons de preto, cinza e branco. Esta escolha não foi apenas estética, mas também conceitual, pois queria que o espectador se concentrasse na expressão e na textura, sem a distração das cores.</p>
-                
+
+                <p>Propus ao meu colega que ele participasse da transferência do risco na tela, ele aceitou e logo
+                    passamos a riscá-la utilizando um projetor
+                    penetrante do animal.</p>
+
+                <p>Para a pintura final, optei por uma abordagem monocromática, utilizando apenas tons de preto, cinza e
+                    branco. Esta escolha não foi apenas estética, mas também conceitual, pois queria que o espectador se
+                    concentrasse na expressão e na textura, sem a distração das cores.</p>
+
                 <h2>Desafios Técnicos</h2>
-                
-                <p>O maior desafio foi reproduzir a textura do pelo e a precisão das listras, mantendo ao mesmo tempo a suavidade necessária para transmitir a vida no olhar do animal. Utilizei pincéis de diferentes espessuras e técnicas de veladura para conseguir o efeito desejado.</p>
-                
-                <p>Outro aspecto desafiador foi o trabalho com luz e sombra em uma paleta tão limitada. Cada tom precisava ser cuidadosamente calculado para criar profundidade sem perder a coerência visual do conjunto.</p>
-                
+
+                <p>O maior desafio foi reproduzir a textura do pelo e a precisão das listras, mantendo ao mesmo tempo a
+                    suavidade necessária para transmitir a vida no olhar do animal. Utilizei pincéis de diferentes
+                    espessuras e técnicas de veladura para conseguir o efeito desejado.</p>
+
+                <p>Outro aspecto desafiador foi o trabalho com luz e sombra em uma paleta tão limitada. Cada tom
+                    precisava ser cuidadosamente calculado para criar profundidade sem perder a coerência visual do
+                    conjunto.</p>
+
                 <h2>Reflexões Finais</h2>
-                
-                <p>Esta obra representa para mim um marco importante em minha jornada artística. Através dela, pude explorar novos limites técnicos e conceituais, além de estabelecer uma conexão emocional com o tema retratado.</p>
-                
-                <p>Espero que ao observar "Entre Listras, Um Olhar", você também possa sentir algo dessa conexão e refletir sobre nossa relação com o mundo natural.</p>
+
+                <p>Esta obra representa para mim um marco importante em minha jornada artística. Através dela, pude
+                    explorar novos limites técnicos e conceituais, além de estabelecer uma conexão emocional com o tema
+                    retratado.</p>
+
+                <p>Espero que ao observar "Entre Listras, Um Olhar", você também possa sentir algo dessa conexão e
+                    refletir sobre nossa relação com o mundo natural.</p>
             </div>
-            
+
             <div class="post-navigation">
                 <a href="#" class="post-nav-prev">Post Anterior</a>
                 <a href="blog.html" class="btn-laranja">Voltar ao Blog</a>
                 <a href="#" class="post-nav-next">Próximo Post</a>
             </div>
-            
+
             <div class="related-posts">
                 <h3>Posts Relacionados</h3>
                 <div class="related-posts-grid">
@@ -93,28 +110,29 @@
 
     <script>
         // Script para o botão Voltar ao Topo
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("btn-voltar-topo").style.display = "flex";
             } else {
                 document.getElementById("btn-voltar-topo").style.display = "none";
             }
         };
-        
+
         // Script para carregar o conteúdo do post
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Em uma implementação real, você buscaria o ID do post da URL
             // e carregaria o conteúdo correspondente de um banco de dados ou JSON
             const urlParams = new URLSearchParams(window.location.search);
             const postId = urlParams.get('id');
-            
+
             // Aqui você carregaria os dados do post com base no ID
             // Este é apenas um exemplo simplificado
             console.log('Carregando post ID:', postId);
-            
+
             // Em uma implementação completa, você teria um arquivo JSON ou API
             // para fornecer os dados dos posts
         });
     </script>
 </body>
+
 </html>

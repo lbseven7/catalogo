@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- Cabeçalho com Menu de Navegação -->
     <header>
@@ -18,7 +20,6 @@
                 <li><a href="index.html#gallery">Galeria</a></li>
                 <!-- <li><a href="exposicoes.html">Exposições</a></li> -->
                 <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
@@ -27,7 +28,7 @@
     <main>
         <section class="blog-container">
             <h1 class="page-title">Blog do Leob</h1>
-            
+
             <!-- Artigos do Blog -->
             <section class="blog-posts">
                 <h2 class="section-title">Artigos</h2>
@@ -41,11 +42,12 @@
                             <span class="post-date">01 de Agosto, 2025</span>
                             <span class="post-category">Exposição de pinturas do artista Leo Barbosa</span>
                         </div>
-                        <p class="post-excerpt">Estive no Colégio Monteiro Lobato falando um pouco para os alunos sobre minha arte e vida.</p>
-                        <a href="post.html?id=1" class="btn-laranja">Ler mais</a>
+                        <p class="post-excerpt">Estive no Colégio Monteiro Lobato falando um pouco para os alunos sobre
+                            minha arte e vida.</p>
+                        <a href="" class="btn-laranja">Ler mais</a>
                     </div>
                 </article>
-                
+
                 <!-- <article class="blog-post">
                     <div class="post-thumbnail">
                         <img src="images/placeholder-blog2.jpg" alt="Exposição">
@@ -98,12 +100,15 @@
                 <div class="videos-grid">
                     <div class="video-card">
                         <div class="video-wrapper">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0tvKkURICCs?si=aV7M1JJWHbRWVhn2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://youtu.be/0tvKkURICCs" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <h3>Palestra no Colégio Monteiro Lobato</h3>
-                        <p class="video-description">No Colégio Monteiro Lobato, fui palestrante sobre minha arte e vida. Foi uma experiência incrível!</p>
+                        <p class="video-description">No Colégio Monteiro Lobato, fui palestrante sobre minha arte e
+                            vida. Foi uma experiência incrível!</p>
                     </div>
-                    
+                    <!-- Adicione mais cards de vídeo conforme necessário -->
                 </div>
             </section> -->
         </section>
@@ -125,7 +130,7 @@
 
     <script>
         // Script para o botão Voltar ao Topo
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("btn-voltar-topo").style.display = "flex";
             } else {
@@ -134,4 +139,5 @@
         };
     </script>
 </body>
+
 </html>
