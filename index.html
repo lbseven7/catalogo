@@ -10,9 +10,44 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <style>
+        .bloqueio-horario {
+            position: fixed;
+            inset: 0;
+            background: #111;
+            color: #fff;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .bloqueio-horario-conteudo {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        body.bloqueado main,
+        body.bloqueado header,
+        body.bloqueado footer,
+        body.bloqueado .blog-highlight {
+            filter: blur(3px);
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="site-bloqueado" class="bloqueio-horario">
+        <div class="bloqueio-horario-conteudo">
+            <h1>Site temporariamente indisponível</h1>
+            <p>O acesso ao catálogo fica suspenso das 17h de sexta-feira às 17h do sábado.</p>
+            <p>Por favor, volte em outro horário. Obrigado pela compreensão.</p>
+        </div>
+    </div>
     <!-- Cabeçalho com Menu de Navegação -->
     <header>
         <!-- Cabeçalho com Menu de Navegação -->
@@ -338,6 +373,35 @@
                 top: 0,
                 behavior: "smooth"
             });
+        });
+
+        function verificarBloqueio() {
+            var agora = new Date();
+            var diaSemana = agora.getDay();
+            var dia = diaSemana + 1;
+            var hora = agora.getHours();
+            var bloqueado = false;
+            if (dia === 6 && hora >= 17) {
+                bloqueado = true;
+            } else if (dia === 7 && hora < 17) {
+                bloqueado = true;
+            }
+            var overlay = document.getElementById("site-bloqueado");
+            if (!overlay) {
+                return;
+            }
+            if (bloqueado) {
+                overlay.style.display = "flex";
+                document.body.classList.add("bloqueado");
+            } else {
+                overlay.style.display = "none";
+                document.body.classList.remove("bloqueado");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            verificarBloqueio();
+            setInterval(verificarBloqueio, 60000);
         });
     </script>
 
